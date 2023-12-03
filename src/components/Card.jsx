@@ -23,7 +23,9 @@ const Card = ({ title, body, views, user, id, createdAt }) => {
       <div>
         <Link to={`/details/${id}`}>
           <h2 className="card-title text-[27px] font-bold mb-4">
-            {title.slice(index + 3, title.length)}
+            {title.includes("^*^")
+              ? title.slice(index + 3, title.length + 1)
+              : title}
           </h2>
         </Link>
         <div className="max-h-[100px] overflow-hidden rounded-md">

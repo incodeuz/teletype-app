@@ -81,7 +81,7 @@ const CreatePost = () => {
       setFileConfig((p) => ({ ...p, error: true }));
     }
   };
-  
+
   return (
     <div className="mx-3 mb-3">
       <div>
